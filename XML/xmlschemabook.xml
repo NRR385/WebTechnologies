@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="xmlschema.xsd">
+    <book>
+        <title>Effective Java</title>
+        <author>Joshua Bloch</author>
+        <isbn>9780134685991</isbn>
+        <publisher>Addison-Wesley</publisher>
+        <edition>3rd</edition>
+        <price>45.99</price>
+    </book>
+    <book>
+        <title>Clean Code</title>
+        <author>Robert C. Martin</author>
+        <isbn>9780132350884</isbn>
+        <publisher>Prentice Hall</publisher>
+        <edition>1st</edition>
+        <price>37.95</price>
+    </book>
+    <book>
+        <title>Introduction to Algorithms</title>
+        <author>Thomas H. Cormen</author>
+        <isbn>9780262033848</isbn>
+        <publisher>MIT Press</publisher>
+        <edition>3rd</edition>
+        <price>89.99</price>
+    </book>
+    <book>
+        <title>Design Patterns</title>
+        <author>Erich Gamma</author>
+        <isbn>9780201633610</isbn>
+        <publisher>Addison-Wesley</publisher>
+        <edition>1st</edition>
+        <price>54.99</price>
+    </book>
+    <book>
+        <title>The Pragmatic Programmer</title>
+        <author>Andrew Hunt</author>
+        <isbn>9780135957059</isbn>
+        <publisher>Addison-Wesley</publisher>
+        <edition>2nd</edition>
+        <price>42.00</price>
+    </book>
+    <book>
+        <title>Python Crash Course</title>
+        <author>Eric Matthes</author>
+        <isbn>9781593279288</isbn>
+        <publisher>No Starch Press</publisher>
+        <edition>2nd</edition>
+        <price>39.95</price>
+    </book>
+</library>

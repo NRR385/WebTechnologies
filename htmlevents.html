@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<body onafterprint="onafterprint()" onbeforeprint="onbeforeprint()">
+<h2>Mouse Events:-</h2>
+<button onclick="myFunction()">Click me</button>
+<button ondblclick="myFunction1()">Double-click me</button>
+<p id="demo"></p>
+<p id="demo1"></p>
+
+<p id="p1" onmousedown="mouseDown()" onmouseup="mouseUp()">
+Click the text! The mouseDown() function is triggered when the mouse button is pressed down over this paragraph. The function sets the color of the text to red. The mouseUp() function is triggered when the mouse button is released. The mouseUp() function sets the color of the text to green.
+</p>
+
+<h2>Keyboard Events:-</h2>
+
+<p>A function is triggered when the user is pressing a key in the input field.</p>
+<input type="text" onkeydown="keypressing()">
+
+<p>A function is triggered when the user releases a key in the input field. </p>
+<input type="text" id="fname" onkeyup="KeyRelease()">
+
+<h2>Windows Events</h2>
+
+<p>Try to print this document Ctrl+P </p>
+<img src="image.jpg" onerror="onerror1()">
+<p>A function is triggered if an error occurs when loading the image.</p>
+
+
+<h2>Form Events</h2>
+
+<p>When you reset the form, a function is triggered which alerts some text.</p>
+
+<form onreset="onreset1()">
+  Enter name: <input type="text">
+  <input type="reset">
+</form>
+
+<p>A function is triggered when one of the input fields get focus.</p>
+First name: <input type="text" id="fname1" onfocus="onfocus1(this.id)"><br>
+Last name: <input type="text" id="lname" onfocus="onfocus1(this.id)">
+
+
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Hello World";
+}
+function myFunction1() {
+  document.getElementById("demo").innerHTML = "DblHello World";
+}
+function mouseDown() {
+  document.getElementById("p1").style.color = "green";
+}
+
+function mouseUp() {
+  document.getElementById("p1").style.color = "purple";
+}
+function keypressing() {
+  alert("You pressed a key inside the input field");
+}
+function KeyRelease() {
+  alert("You released a key");
+}
+function onafterprint() {
+  alert("This document is now being printed");
+}
+function onbeforeprint() {
+  alert("You are about to print this document!");
+}
+function onerror1() {
+  alert("The image could not be loaded.");
+}
+function onreset1() {
+  alert("The form was reset");
+}
+function onfocus1(x) {
+  document.getElementById(x).style.background = "pink";
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.top-header {
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+}
+
+.left-icons,
+.center-logo,
+.auth-links {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.left-icons {
+  justify-content: flex-start;
+  font-size: 20px;
+  gap: 10px;
+}
+
+.center-logo {
+  justify-content: center;
+}
+
+.logo {
+  height: 50px;
+  width: 100px;
+}
+
+.auth-links {
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.register-btn {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.signin-btn {
+  background: none;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 12px 0;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.main-nav a:hover {
+  text-decoration: underline;
+}
+
+.news-section {
+  padding: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.news-title {
+  text-align: center;
+  font-size: 28px;
+  color: darkred;
+  margin-bottom: 20px;
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1.5fr;
+  gap: 20px;
+}
+
+/* Left Column */
+.left-column h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.left-column p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.left-column span {
+  font-size: 12px;
+  color: gray;
+}
+
+.center-column img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.right-column .story {
+  margin-bottom: 20px;
+}
+.right-column h4 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.right-column a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+.right-column p {
+  font-size: 13px;
+}
+.right-column span {
+  font-size: 12px;
+  color: gray;
+}

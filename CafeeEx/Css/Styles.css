@@ -1,0 +1,216 @@
+/* =====================
+   OLD MONEY STYLE THEME
+   ===================== */
+
+:root {
+  --cream: #f5f0e6;
+  --dark-brown: #3e2f1c;
+  --medium-brown: #5b4e42;
+  --light-tan: #d6c1a7;
+  --accent: #8b6f47;
+  --border: #cbb89d;
+  --header-bg: #4d3b2b;
+  --footer-bg: #fdfaf3;
+}
+
+body {
+  background-color: var(--cream);
+  color: var(--dark-brown);
+  font-family: 'Georgia', serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.8;
+}
+
+/* Links */
+a {
+  color: var(--dark-brown);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:visited {
+  color: var(--medium-brown);
+}
+
+a:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+/* Headings */
+h1, h2, h3 {
+  font-family: 'Garamond', serif;
+  font-weight: 600;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 2.8em;
+  color: var(--dark-brown);
+}
+
+h2 {
+  font-size: 1.8em;
+  color: #4a392d;
+}
+
+/* Horizontal Rule */
+hr {
+  border: none;
+  height: 1px;
+  background-color: var(--border);
+  margin: 20px auto;
+  max-width: 85%;
+}
+
+/* Header Section */
+header {
+  background-color: var(--header-bg);
+  color: var(--footer-bg);
+  padding: 25px 40px;
+  text-align: center;
+}
+
+/* Navigation */
+nav {
+  background-color: #efe6d3;
+  padding: 15px 0;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 18px;
+  font-size: 1.1em;
+  transition: all 0.2s ease;
+}
+
+/* Hero Section */
+.home-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 20px;
+  gap: 40px;
+}
+
+.home-img {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  border: 5px solid var(--light-tan);
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(60, 45, 30, 0.15);
+}
+
+.home-description {
+  max-width: 500px;
+  font-size: 1.1em;
+  color: var(--dark-brown);
+}
+
+/* Menu & Recipes */
+.menu-section, .recipes-section {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.menu-list, .recipe-list {
+  padding-left: 25px;
+  font-size: 1.1em;
+  color: var(--dark-brown);
+}
+
+.menu-list li, .recipe-list li {
+  margin-bottom: 12px;
+}
+
+.recipe-list li p {
+  margin-top: 4px;
+  color: #5d4a3c;
+  font-style: italic;
+}
+
+/* Contact Page Styles */
+main {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.contact-info div {
+  flex: 1 1 300px;
+  background-color: var(--footer-bg);
+  padding: 20px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(130, 110, 90, 0.1);
+}
+
+.contact-info h2 {
+  color: var(--header-bg);
+}
+
+.map-container {
+  width: 100%;
+  height: 450px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 6px 12px rgba(60, 45, 30, 0.15);
+}
+
+/* Footer */
+footer {
+  background-color: var(--footer-bg);
+  color: #6e5b48;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.95em;
+  margin-top: 40px;
+  border-top: 1px solid var(--border);
+}
+
+/* === Centered Logo & Cafe Name === */
+
+.site-header {
+  background-color: var(--header-bg);
+  text-align: center;
+  padding: 40px 20px 30px;
+  border-bottom: 1px solid var(--border);
+}
+
+.branding-centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo-centered {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 5px solid var(--light-tan);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+.cafe-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 3em;
+  font-weight: 700;
+  color: #000;
+  margin: 0;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
